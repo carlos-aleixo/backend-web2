@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 const porta = 3030;
 
-const db = new sqlite3.Database('./banco.db');
+const db = new sqlite3.Database('./dados.db');
 
 db.run(`
     CREATE TABLE IF NOT EXISTS consultas (
